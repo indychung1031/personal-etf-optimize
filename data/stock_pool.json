@@ -1,0 +1,214 @@
+[
+    {
+        "name": "NVIDIA Corp",
+        "ticker": "NVDA",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Micron Technology",
+        "ticker": "MU",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Intel Corporation",
+        "ticker": "INTC",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Broadcom Inc",
+        "ticker": "AVGO",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Tesla Inc",
+        "ticker": "TSLA",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Advanced Micro Devices",
+        "ticker": "AMD",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Teradyne Inc",
+        "ticker": "TER",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Freeport-McMoRan",
+        "ticker": "FCX",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Apple Inc",
+        "ticker": "AAPL",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Microsoft Corp",
+        "ticker": "MSFT",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Amazon.com Inc",
+        "ticker": "AMZN",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Meta Platforms Inc",
+        "ticker": "META",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Lam Research",
+        "ticker": "LRCX",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Applied Materials",
+        "ticker": "AMAT",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Palantir Technologies",
+        "ticker": "PLTR",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Cisco Systems",
+        "ticker": "CSCO",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Lockheed Martin",
+        "ticker": "LMT",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Intuitive Surgical",
+        "ticker": "ISRG",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Honeywell",
+        "ticker": "HON",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Northrop Grumman",
+        "ticker": "NOC",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Rio Tinto",
+        "ticker": "RIO",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Albemarle Corp",
+        "ticker": "ALB",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Pilbara Minerals",
+        "ticker": "PLS",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Teck Resources",
+        "ticker": "TECK",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Berkshire Hathaway",
+        "ticker": "BRK.B",
+        "sector": "Unknown"
+    },
+    {
+        "name": "JPMorgan Chase",
+        "ticker": "JPM",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Eli Lilly and Co",
+        "ticker": "LLY",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Walmart Inc",
+        "ticker": "WMT",
+        "sector": "Unknown"
+    },
+    {
+        "name": "(Security Group)",
+        "ticker": "CIBR",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "(Space Group)",
+        "ticker": "UFO",
+        "sector": "Unknown",
+        "sources": ""
+    },
+    {
+        "name": "Alphabet Inc (A)",
+        "ticker": "GOOGL",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Alphabet Inc (C)",
+        "ticker": "GOOG",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Costco Wholesale",
+        "ticker": "COST",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Netflix Inc",
+        "ticker": "NFLX",
+        "sector": "Unknown"
+    },
+    {
+        "name": "PepsiCo Inc",
+        "ticker": "PEP",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Visa Inc",
+        "ticker": "V",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Exxon Mobil Corp",
+        "ticker": "XOM",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Johnson & Johnson",
+        "ticker": "JNJ",
+        "sector": "Unknown"
+    },
+    {
+        "name": "Mastercard Inc",
+        "ticker": "MA",
+        "sector": "Unknown"
+    },
+    {
+        "name": "AbbVie Inc",
+        "ticker": "ABBV",
+        "sector": "Unknown"
+    }
+]

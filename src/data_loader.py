@@ -227,52 +227,49 @@ def get_market_caps(tickers):
         currency = "USD"
         try:
             ticker_obj = yf.Ticker(normalized)
-            info = ticker_obj.info
-            quote_type = info.get('quoteType', '').upper()
             
-            # 1. Prioritize based on Quote Type
-            if quote_type == 'ETF':
-                # Attempt to find AUM (Total Assets)
-                cap = info.get('totalAssets')
-                if cap is None:
-                    cap = info.get('marketCap')
-            else:
-                # Regular stock - Use Stable Mcap Validator
-                cap = get_stable_mcap(ticker_obj, info)
-                
-                # Double Safety for TSM (Yahoo info often doubles its ADR price/cap)
-                if normalized == "TSM" and cap and cap > 1.5e12:
-                     cap = cap / 2.0
+            # 1. Try Fast Info first (Much faster and less likely to be blocked in Cloud)
+            try:
+                f_info = ticker_obj.fast_info
+                cap = f_info.get('market_cap') or f_info.get('total_assets')
+                currency = f_info.get('currency', 'USD')
+            except:
+                pass
 
-            # Last ditch effort for any type
+            # 2. If Fast Info failed or returned nothing, try full .info as fallback
             if cap is None:
-                cap = info.get('totalAssets') or info.get('marketCap')
-            
-            currency = info.get('currency', 'USD')
-
-            # 2. Try Fallback if primary failed
-            if cap is None and normalized in MCAP_FALLBACKS:
-                fallback_ticker = MCAP_FALLBACKS[normalized]
                 try:
-                    ft_obj = yf.Ticker(fallback_ticker)
-                    ft_info = ft_obj.info
-                    # Similar logic for fallback
-                    f_type = ft_info.get('quoteType', '').upper()
-                    if f_type == 'ETF':
-                        cap = ft_info.get('totalAssets', None)
+                    info = ticker_obj.info
+                    quote_type = info.get('quoteType', '').upper()
+                    if quote_type == 'ETF':
+                        cap = info.get('totalAssets') or info.get('marketCap')
                     else:
-                        cap = ft_info.get('marketCap', None)
-                    currency = ft_info.get('currency', 'USD')
+                        cap = get_stable_mcap(ticker_obj, info)
+                    currency = info.get('currency', 'USD')
                 except:
                     pass
             
-            # 3. Currency Conversion to USD
+            # Simple TSM double counting check
+            if normalized == "TSM" and cap and cap > 1.5e12:
+                cap = cap / 2.0
+
+            # 3. Try Explicit Fallback (e.g. Swiss ticker for ABB)
+            if cap is None and normalized in MCAP_FALLBACKS:
+                fb_ticker = MCAP_FALLBACKS[normalized]
+                try:
+                    fb_obj = yf.Ticker(fb_ticker)
+                    cap = fb_obj.fast_info.get('market_cap')
+                    currency = fb_obj.fast_info.get('currency', 'USD')
+                except:
+                    pass
+            
+            # 4. Currency Conversion
             if cap and currency != "USD":
                 rate = EXCHANGE_RATES.get(currency, 1.0)
                 cap = cap * rate
 
             return original, cap
-        except Exception as e:
+        except Exception:
             return original, None
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:

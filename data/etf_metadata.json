@@ -1,112 +1,112 @@
 {
     "VOO": {
         "name": "Vanguard S&P 500 ETF",
-        "fallback_aum": 1300.0,
+        "fallback_aum": 1510.0,
         "description": "미국 상위 500개 우량주. 안정성의 상징."
     },
     "QQQ": {
         "name": "Invesco QQQ Trust",
-        "fallback_aum": 400.0,
+        "fallback_aum": 236.0,
         "description": "기술주 중심의 초고속 성장 엔진."
     },
     "SMH": {
         "name": "VanEck Semiconductor",
-        "fallback_aum": 44.9,
+        "fallback_aum": 24.5,
         "description": "반도체 생태계의 대장주 집중 (TSMC, NVDA)"
     },
     "SOXX": {
         "name": "iShares Semiconductor",
-        "fallback_aum": 21.0,
+        "fallback_aum": 21.3,
         "description": "미국 상장 반도체 대표 기업 지수"
     },
     "CIBR": {
         "name": "First Trust Cybersecurity",
-        "fallback_aum": 11.1,
+        "fallback_aum": 11.5,
         "description": "네트워크 보안 및 해킹 방어"
     },
     "IBB": {
         "name": "iShares Biotechnology",
-        "fallback_aum": 8.3,
+        "fallback_aum": 8.5,
         "description": "나스닥 바이오텍 기업 시가총액 가중"
     },
     "AIQ": {
         "name": "Global X AI & Tech",
-        "fallback_aum": 8.0,
+        "fallback_aum": 8.2,
         "description": "AI 하드웨어와 빅데이터 기업 집중"
     },
     "XBI": {
         "name": "SPDR S&P Biotech",
-        "fallback_aum": 8.0,
+        "fallback_aum": 8.1,
         "description": "중소형 바이오텍 기업 동일 가중 (높은 탄력성)"
     },
     "XME": {
         "name": "SPDR Metals & Mining",
-        "fallback_aum": 4.7,
+        "fallback_aum": 4.8,
         "description": "원자재, 희토류 채굴 및 가공"
     },
     "QTUM": {
         "name": "Defiance Quantum",
-        "fallback_aum": 3.7,
+        "fallback_aum": 3.8,
         "description": "양자 컴퓨팅 및 차세대 센서 기술"
     },
     "BOTZ": {
         "name": "Global X Robotics & AI",
-        "fallback_aum": 3.4,
+        "fallback_aum": 3.5,
         "description": "산업용 로봇 및 자동화 기기 선두주자"
     },
     "HACK": {
         "name": "ETFMG Prime Cyber Security",
-        "fallback_aum": 2.0,
+        "fallback_aum": 2.1,
         "description": "사이버 보안 인프라 및 서비스"
     },
     "PICK": {
         "name": "iShares Global Metals",
-        "fallback_aum": 1.9,
+        "fallback_aum": 2.0,
         "description": "전 세계 광산 및 자원 채굴 기업"
     },
     "ROBO": {
         "name": "ROBO Global Robotics",
-        "fallback_aum": 1.5,
+        "fallback_aum": 1.6,
         "description": "헬스케어, 제조 로봇 등 전방위적 커버리지"
     },
     "CHAT": {
         "name": "Roundhill Generative AI",
-        "fallback_aum": 1.0,
+        "fallback_aum": 1.2,
         "description": "생성형 AI 및 플랫폼 기업 투자"
     },
     "ARKX": {
         "name": "ARK Space Exploration",
-        "fallback_aum": 0.763,
+        "fallback_aum": 1.1,
         "description": "재사용 로켓, 위성, 항공우주 혁신"
     },
     "SETM": {
         "name": "VanEck Rare Earth",
-        "fallback_aum": 0.515,
+        "fallback_aum": 0.55,
         "description": "전기차/배터리 필수 희귀 금속"
     },
     "UFO": {
         "name": "Procure Space",
-        "fallback_aum": 0.365,
+        "fallback_aum": 0.38,
         "description": "위성 통신 및 우주 기반 인프라"
     },
     "DRIV": {
         "name": "Global X Autonomous EV",
-        "fallback_aum": 0.358,
+        "fallback_aum": 0.38,
         "description": "자율주행 소프트웨어 및 전기차 부품"
     },
     "COPP": {
         "name": "Sprott Copper",
-        "fallback_aum": 0.287,
+        "fallback_aum": 0.31,
         "description": "구리 채굴 및 제련 (전력 인프라 필수)"
     },
     "IDRV": {
         "name": "iShares Self-Driving",
-        "fallback_aum": 0.156,
+        "fallback_aum": 0.18,
         "description": "EV 배터리 및 주행 보조 시스템"
     },
     "ROKT": {
         "name": "SPDR Final Frontiers",
-        "fallback_aum": 0.07,
+        "fallback_aum": 0.08,
         "description": "심우주 탐사 및 방산 기술"
     }
 }

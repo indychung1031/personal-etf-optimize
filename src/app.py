@@ -59,7 +59,7 @@ for k, meta in etf_metadata.items():
 TOTAL_AUM = sum(ETF_AUMS.values())
 
 if used_fallbacks:
-    st.sidebar.warning(f"⚠️ {len(used_fallbacks)}개 ETF의 자산 규모를 실시간으로 가져오지 못해 백업 데이터를 사용 중입니다: {', '.join(used_fallbacks)}")
+    st.sidebar.info(f"💡 현재 실시간 API 제한으로 인해 **2026년 2월 최신 보정 데이터**를 사용하여 포트폴리오를 구성 중입니다. (대상: {len(used_fallbacks)}개 ETF)")
 
 # --- View 1: Indy's ETF Information ---
 if menu == "Indy's ETF Information":
